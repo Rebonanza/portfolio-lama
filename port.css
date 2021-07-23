@@ -1,0 +1,353 @@
+.link {
+  margin-left: 240px;
+}
+.link li {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.link li a {
+  border-bottom: none;
+  transition: all 0.1s;
+}
+.link li a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+.background {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/bg2.jpg");
+
+  background-size: cover;
+}
+
+.container .hire {
+  color: goldenrod;
+  border: 2px solid white;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.container .hire:hover {
+  color: black;
+  border: none;
+  background-color: goldenrod;
+}
+#about {
+  height: 100vh;
+  background-size: 100%;
+  background-color: whitesmoke;
+}
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 0px 0px 3px #333;
+  transform: scale(1.03, 1.03);
+  cursor: pointer;
+}
+.content {
+  margin-top: 0px;
+}
+.content .container {
+  width: 50%;
+}
+.content .container h3 {
+  width: 200px;
+  margin-left: 33%;
+  padding: 5px;
+  border: 2px solid goldenrod;
+}
+.skills {
+  padding: 10px 20px;
+}
+.services {
+  padding: 10px 20px;
+}
+#services {
+  height: 100vh;
+}
+.services .card {
+  background-color: gold;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.5s;
+}
+.services .card:hover {
+  transform: scale(1.04, 1.04);
+  cursor: pointer;
+}
+.card {
+  border: none;
+}
+
+.judul {
+  color: white;
+}
+
+.body {
+  margin-left: 12%;
+}
+#Portfolio {
+  height: 100vh;
+}
+
+#Portfolio .card {
+  background: none;
+  border: 4px solid gold;
+  border-radius: none;
+}
+
+#Contact {
+  height: 100vh;
+  color: white;
+}
+#Contact h1 {
+  font-size: 80px;
+  color: gold;
+  text-shadow: -6px 1.5px whitesmoke;
+  font-weight: bold;
+}
+
+#Contact form input {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border-radius: 0%;
+  border: none;
+  border-bottom: 2px solid rgb(235, 234, 234);
+  transition: 0.2s;
+}
+#Contact form input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid gold;
+}
+#Contact form textarea {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border-radius: 0%;
+  border: none;
+  border: 2px solid rgb(235, 234, 234);
+}
+#Contact form textarea:focus {
+  box-shadow: none;
+  border: 2px solid gold;
+}
+#Contact form button {
+  background-color: transparent;
+  padding: 5px 10px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border: 2px solid gold;
+  transition: 0.5s;
+}
+#Contact form button:hover {
+  background-color: gold;
+  color: black;
+}
+#footer a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+}
+#footer a:hover {
+  transform: translateY(-10px);
+}
+#footer a img {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.progress {
+  width: 150px;
+  height: 150px !important;
+  float: left;
+  line-height: 150px;
+  background: none;
+  margin-left: 28px;
+  margin-bottom: 15px;
+  box-shadow: none;
+  position: relative;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid rgb(206, 206, 206);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #333;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  box-shadow: 0px 0px 8px black;
+}
+
+.progress.blue .progress-bar {
+  border-color: gold;
+}
+.progress.blue .progress-right .progress-bar {
+  animation: loading-1 1.8s linear forwards;
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+  border-color: gold;
+}
+
+.progress.yellow .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-4 1s linear forwards 1.8s;
+}
+.progress.red .progress-bar {
+  border-color: gold;
+}
+
+.progress.red .progress-right .progress-bar {
+  animation: loading-5 1.8s linear forwards;
+}
+.progress.red .progress-left .progress-bar {
+  animation: loading-6 1s linear forwards 1.8s;
+}
+.progress.green .progress-bar {
+  border-color: gold;
+}
+
+.progress.green .progress-right .progress-bar {
+  animation: loading-5 1.8s linear forwards;
+}
+.progress.green .progress-left .progress-bar {
+  animation: loading-6 1s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
